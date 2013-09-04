@@ -1,0 +1,200 @@
+﻿<!DOCTYPE html>
+<html>
+	<head>
+		<link type="text/css" rel="stylesheet" href="stylesheet.css"/>
+		<title>JIA_RUO_RESUME</title>
+	</head>
+	<body>
+		<div id="header">
+			<p id="name">Ruo Jia</p>
+			<a href="mailto:rjia@stevens.edu"><p id="email">rjia@stevens.edu</p></a>
+		</div>
+		<div class="left">
+			<!-- 照片 -->			
+			<img src='photo.jpg' style = "width:133px ; height:10% ; border-radius: 0.6em;" />
+
+			
+			
+			<!--推荐信 -->
+			<br></br>
+			<br></br>
+			<!--<img onClick="javascript:window.open('photo.jpg','','toolbar=no, status=no,scrollbars=no,resizable=no,menubar=no,top=100,left=168')" class="refer" src='photo.jpg' style = "width:69px ; height:88px" />-->
+			<img onClick="javascript:window.open('refer1.jpg','','toolbar=no, status=no,scrollbars=no,resizable=no,menubar=no,top=100,left=168')" class="refer" src='refer1.jpg' style = "width:69px ; height:88px" />
+			<br></br>
+			<br></br>		
+			<img onClick="javascript:window.open('refer2.jpg','','toolbar=no, status=no,scrollbars=no,resizable=no,menubar=no,top=100,left=168')" class="refer" src='refer2.jpg' style = "width:69px ; height:88px" />
+			<br></br>
+			<br></br>
+			<img onClick="javascript:window.open('XXX.jpg','','toolbar=no, status=no,scrollbars=no,resizable=no,menubar=no,top=100,left=168')" class="refer" src='XXX.jpg' style = "width:69px ; height:88px" />
+			<br></br>
+			<br></br>		
+			<!-- 其他照片 -->
+			<div class= "demos" id="demo_1"><img src="photo_1.jpg" border="2" onclick="show(1);" alt=""/></div>
+			<br></br>
+			<br></br>
+			<div class= "demos" id="demo_2"><img src="photo_2.jpg" border="2" onclick="show(2);" alt=""/></div>
+			<script>
+			function show(id){
+				//alert(id);
+				var showblock = document.getElementById("showpicture");
+				var showback = document.getElementById("showback");
+				if (showblock.style.backgroundImage==""){
+					showblock.style.display="block";
+					showback.style.display="block";
+					showblock.style.backgroundImage = "url(photo_"+id+".jpg)";
+				}
+				else{
+					showblock.style.display="none";
+					showback.style.display="none";
+					showblock.style.backgroundImage = "";
+				}
+				//alert(showblock.style.backgroundImage);
+			}
+			</script>
+		</div>
+		<div id ="showback" onclick="show(0);"></div>
+		<div id="showpicture">
+
+			<!--
+			<div class= "refer" id="demo_1"><img src="photo_1.jpg" border="2" onclick="show(1);" alt=""/></div>
+			<div class= "refer" id="demo_2"><img src="photo_2.jpg" border="2" onclick="show(2);" alt=""/></div>
+			<div id="enlarge_images"></div>
+			<script>
+			var demo = document.getElementById("demo");
+			var gg = demo.getElementsByTagName("img");
+			var ei = document.getElementById("enlarge_images");
+			for(i=0; i<gg.length; i++){
+				var ts = gg[i];
+				ts.onclick = function(event){
+					event = event || window.event;
+					ei.style.display = "block";
+					ei.innerHTML = '<img src="photo2.jpg" />';
+					ei.style.top  = document.body.scrollTop + event.clientY + 10 + "px";
+					ei.style.left = document.body.scrollLeft + event.clientX + 10 + "px";
+				}
+				ts.onmouseout = function(){
+					ei.innerHTML = "";
+					ei.style.display = "none";
+				}
+			}
+			</script>
+			<br></br>
+			<br></br>		
+			<style>
+			#demo2{overflow:hidden;width:120px;text-align:center;}
+			#demo2 img{border:1px solid #eeeeee;width:100px;height:75px;}
+			#enlarge_images2{position:fixed; bottom:50px; display:none; z-index:2;}
+			</style>
+			<div class= "refer" id="demo2"><img src="photo3.jpg" border="2" alt=""/></div>
+			<div id="enlarge_images2"></div>
+			<script>
+			var demo2 = document.getElementById("demo2");
+			var gg = demo2.getElementsByTagName("img");
+			var ei = document.getElementById("enlarge_images2");
+			for(i=0; i<gg.length; i++){
+				var ts = gg[i];
+				ts.onclick = function(event){
+					event = event || window.event;
+					ei.style.display = "block";
+					ei.innerHTML = '<img src="photo3.jpg" />';
+					ei.style.top  = document.body.scrollTop + event.clientY + 10 + "px";
+					ei.style.left = document.body.scrollLeft + event.clientX + 10 + "px";
+				}
+				ts.onmouseout = function(){
+					ei.innerHTML = "";
+					ei.style.display = "none";
+				}
+			}
+			</script>
+		-->
+		</div>
+		<div class="right">
+			<h4>Objective</h4>
+			<p>To obtain a summer internship.</p>
+
+			<h4>Education</h4>
+			
+			<p class="t">Stevens Institute of Technology, Hoboken, NJ.                  Expected: Dec 2013 </p>
+			<p>Master of Science in Computer Science,                                    G.P.A:3.0/4.0</p>
+						
+			<p class="t">Ocean University of China, Qingdao, China.                  Graduated: June 2009 </p>
+			<p>Bachelor of Engineering in Computer Science, Minor: Ecology,              G.P.A:3.0/4.0</p>
+			
+			<h4>Projects</h4>
+
+			<p style= "font-size:1.1em "><strong>Stevens Institute of Technology, Hoboken, NJ </strong></p>
+			<p class="t">Facebook Application ImgJigsaw:                                2/2013-present </p>
+			<ul>
+				<li>Developed a Facebook Application using HTML/HTML5, CSS/CSS3 and JavaScript. </li>
+				<li>Link: <a href ="http://apps.facebook.com/imgjigsaw/" target="_black"> http://apps.facebook.com/imgjigsaw/ </a></li>
+				<li>Currently available: <a href = "http://www.imgjigsaw.co.nf/" target="_black"> http://www.imgjigsaw.co.nf/  </a></li>
+				<p></p>
+			<p style= "font-size:1.1em"><strong>Ocean University of China, Qingdao, China</strong></p>
+			<p class="t">Analysis Software for DNA Repetitive Sequence:                  6/2009-1/2010 </p>
+			<ul>
+				<li>Analyzed DNA repetitive base sequence’s characteristics from huge amount of DNA data. </li>
+				<li>Developed  a  Microsoft  Excel  integrated  software  using C++ to realize base sequence’s useful functions. </li>
+			</ul>
+			<p class="t">Library Management System:                                      4/2007-1/2008 </P>
+			<ul>
+				<li>Established a management system with a group including 5 members </li>
+				<li>Created functions,  such  as  library  books  warehousing,  returning  books, management, lending and overdue book management. Using C++, SQL Server 2003, JavaScript. </li>
+			</ul>
+			<p class="t">File System of Information Security Level Protection:           2/2008-6/2008 </p>
+			<ul>
+				<li>Developed a filing system for large website’s information security level protection using C# under Linux environment.</li>
+				<li>Assessed protection grade of information security, and also automatic filing system, in accordance with the Administrative Policy of Information Security Level Protection. </li>
+			</ul>
+						
+			<h4>Experience</h4>
+			
+			<p class="t">Microsoft in Asia-Pacific Research & Development Group, Peking, China </p>
+			<p>Windows & Windows Live International Team Intern (Full-time):          5/2011-6/2012 </p>
+			<ul>
+				<li>Testing Windows 8 zh-cn, zh-tw & zh-hk </li>
+				<li>Setting automated test for windows 8 search, IME, font functions</li>
+				<li>Leading and training interns to do Windows 8 tests </li>
+				<li>Testing Windows server and Hyper-V </li>
+				<li>Translate user manual to Chinese </li>
+			</ul>
+
+			<p class="t">Harvest Church of New Jersey, Jersey City, NJ </p>
+			<p>Volunteer Web Developer:                                              10/2012-present</p>
+			<ul>
+				<li>Website maintenance and enhancements </li>
+				<li>Implement the User Interface(UI) using HTML/HTML5 and CSS/CSS3 </li>
+				<li>Link: http://www.harvestchurchnj.org/churchonline/main.php</li>
+			</ul>
+			
+			<h4>Skills</h4>
+			<ul>
+			<li>Programming languages：Java; C/C++; C#.NET(Junior); Web-developing(HTML/HTML5, CSS/CSS3, JavaScript); SQL Queries; Power Shell; R </li>
+            <li>Operating systems: Windows; Red hat Linux 7; DOS </li>
+            <li>Software: PostgreSQL; SQL server; Adobe Photoshop 7, Microsoft Office </li>
+			<li>IDE: Visual Studio 2013; Eclipse/My Eclipse </li>
+			</ul>
+			<h4>Honors</h4>
+			<ul>
+			<li>Won Excellent Prize at Undergraduate Research Training Project for college student 2008</li>
+			<li>Won scientific and technological innovation Scholarship; Won 2nd Place at the College Students’ Debate, Ocean University of China 2006</li>
+			<li>Awarded the title of the best debater at the debate competition held by  School of Information Science and Engineering, Ocean University of China, Awarded the Second-level Athlete, Jilin Province 2005</li>
+			</ul>
+			<h4>Activities</h4>
+			<ul>
+			<li>Developed a website independently for a stomatological hospital, 2011</li>
+			<li>Vice Minister of the Student Union of Ocean University of China, 2006-2007</li>
+			<li>Director of Tianyi Publishing House, Ocean University of China, 2005-2007</li>
+			<li>Volunteered to be a teacher in Western China, 2006</li>
+			<li>Served as a volunteer at Social Welfare Institute, 2005</li>
+			</ul>
+			<h4>Hobbies</h4>
+			<p>Playing Guzheng</p>
+			<p>Swimming</p>
+			<p>Tae Kwon</p>
+			<p>Coding</p>
+		</div>
+		<div id="footer">
+			<p>600 Jackson street, Apt.317E, Hoboken, NJ 07030 | Tel: +1 (201) 637-1271</p>
+		</div>
+	</body>
+</html>

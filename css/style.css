@@ -1,0 +1,31 @@
+@charset "utf-8";
+/* CSS Document */
+
+
+
+h1 { font-size:36px; }
+
+body { url(i/auraslice.jpg) repeat-x top; }
+
+table{
+	border:0px;
+}
+
+#container { margin-left:auto; margin-right:auto; width:960px }
+
+#outerblock { position:relative; z-index:2; margin:50px; }
+
+#loginblock { position:relative; }
+
+#innerblock { position:absolute; z-index:999;  }
+#slideshow { padding:10px; }
+
+#innerblock #ribbon-left { background:url(i/ribbonleft.png) no-repeat bottom left;  width:28px; height:72px; position:absolute;  margin-top:-160px; margin-left:-18px;}
+
+#innerblock .title { position:absolute; background:url(i/ribbon-slice.png) repeat-x; border-right:1px solid #185381; border-top:1px solid #185381; border-bottom:1px solid #185381; padding:0px 4px 7px 0px; display:none; color:#fff;height:44px; margin-top:238px; z-index:3;
+}
+#innerblock p { position:absolute; width:630px; padding:10px 25px 10px 25px; text-align:justify; font-family: "Lucida Sans Unicode", "Lucida Grande", sans-serif; background:url(i/desc-overlay.png);margin-top:300px;z-index:2; display:none; line-height: 20px; }
+
+#shadow { margin-top:-120px;margin-left:20px }
+
+#slideshow ul { list-style:none; }

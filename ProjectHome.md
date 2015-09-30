@@ -1,0 +1,1 @@
+This tool is creaated to help create and manage test cases, test results, and let testers communicate with developers.
